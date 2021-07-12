@@ -14,13 +14,14 @@ body {
 }
 .main-container {
   border-radius: 3rem;
-  padding: 5rem 15rem;
+  padding: 5rem 10rem;
   margin: 5rem;
-  width: 80%;
-  height: 60rem;
-  background-color: #ccc;
+  width: 45%;
+  height: 55rem;
+  background-color: hsl(225, 59%, 77%);
   font-size: 3.5rem;
   min-width: 50rem;
+  box-shadow: 1rem 1rem 1rem hsl(226, 14%, 36%);
 }
 .input-group {
   display: flex;
@@ -34,11 +35,13 @@ body {
   outline: none;
   padding: 1rem;
   min-width: 25rem;
+  color: rgb(51, 51, 51);
 }
 
 .input-group > span {
   display: inline-block;
   margin: 0.5rem 1rem;
+  color: rgb(51, 51, 51);
 }
 
 .btn {
@@ -47,4 +50,5 @@ body {
   height: 7rem;
   border-radius: 3rem;
   align-self: center;
+  box-shadow: .3rem .3rem .3rem hsl(226, 14%, 36%);
 }
