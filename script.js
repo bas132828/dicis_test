@@ -56,7 +56,7 @@ const formSubmission = (e) => {
   });
   //clearing the fields
   arr.forEach(el=> document.querySelector(`.${el}`).value ='')
-  //useing setTimeout for clearing async (not waiting for alert window to be clicked)
+  //using setTimeout for clearing async (not waiting for alert window to be clicked)
   setTimeout(() => {
     alert(`form is submitted, JSON file shown in console now`)
   }, 0); 
