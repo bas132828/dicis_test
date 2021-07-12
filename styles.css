@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-container {
+  border-radius: 3rem;
+  padding: 5rem 15rem;
+  margin: 5rem;
+  width: 80%;
+  height: 60rem;
+  background-color: #ccc;
+  font-size: 3.5rem;
+  min-width: 50rem;
+}
+.input-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.input-group > input {
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  min-width: 25rem;
+}
+
+.input-group > span {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
+
+.btn {
+  margin-top: 3rem;
+  width: 20rem;
+  height: 7rem;
+  border-radius: 3rem;
+  align-self: center;
+}

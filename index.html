@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <form class="input-group" id="form">
+        <span class="input-group-text">Фамилия</span>
+        <input
+          type="text"
+          aria-label="surname"
+          class="form-control surname"
+          required
+        />
+        <span class="input-group-text">Имя</span>
+        <input
+          type="text"
+          aria-label="surname"
+          class="form-control name"
+          required
+        />
+        <span class="input-group-text">Отчество</span>
+        <input
+          type="text"
+          aria-label="patronomic"
+          class="form-control patronomic"
+        />
+        <span class="input-group-date">Дата рождения</span>
+        <input
+          type="date"
+          aria-label="date"
+          class="form-control date"
+          required
+        />
+        <span class="input-group-date">Место рождения</span>
+        <input
+          type="text"
+          aria-label="text"
+          class="form-control place"
+          required
+        />
+        <span class="input-group-date">Номер и серия паспорта</span>
+        <input
+          type="text"
+          aria-label="text"
+          class="form-control passport"
+          required
+        />
+        <button type="submit" class="btn">Зарегистрироваться</button>
+      </form>
+    </div>
+  </body>
+</html>
