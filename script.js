@@ -32,7 +32,7 @@ const cookieSetter = (key, val) => {
   document.cookie = `${key}=${val}` + date;
 };
 
-const fullSubmission = (e) => {
+const formSubmission = (e) => {
   const surname = document.querySelector(".surname");
   const name = document.querySelector(".name");
   const patronomic = document.querySelector(".patronomic");
@@ -54,8 +54,13 @@ const fullSubmission = (e) => {
   userMap.forEach((value, key) => {
     cookieSetter(key, value);
   });
-
+  //clearing the fields
+  arr.forEach(el=> document.querySelector(`.${el}`).value ='')
+  //useing setTimeout for clearing async (not waiting for alert window to be clicked)
+  setTimeout(() => {
+    alert(`form is submitted, JSON file shown in console now`)
+  }, 0); 
   return console.log(JSON.stringify(user));
 };
 
-form.addEventListener("submit", fullSubmission);
+form.addEventListener("submit", formSubmission);
